@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Homemade+Apple&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wuthering Heights</title>
+    <style>
+      body {
+        background: linear-gradient(
+          106.7deg,
+          rgb(245, 167, 191) -6.2%,
+          rgb(201, 218, 238) 46.4%,
+          rgb(164, 240, 229) 86.4%
+        );
+      }
+
+      .maincontent {
+        display: block;
+        margin: auto;
+        padding: 2rem;
+        max-width: 800px;
+        border-radius: 25px;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 70%;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Homemade Apple", Arial, sans-serif;
+        text-align: center;
+      }
+
+      * {
+        font-family: "EB Garamond", Arial, sans-serif;
+      }
+
+      .title {
+        font-weight: 700;
+        color: teal;
+      }
+
+      p {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      button {
+        background-color: rgb(0, 181, 149);
+        border: none;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        box-shadow: 10px 5px 5px rgb(0, 93, 133);
+        border: rgb(0, 93, 133) 2px solid;
+        display: block;
+        margin: auto;
+        font-family: "Homemade Apple", Arial, sans-serif;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: rgb(164, 240, 229);
+      }
+
+      hr {
+        overflow: visible; /* For IE */
+        height: 30px;
+        border-style: solid;
+        border-color: rgb(0, 93, 133);
+        border-width: 1px 0 0 0;
+        border-radius: 20px;
+      }
+
+      hr:before {
+        display: block;
+        content: "";
+        height: 30px;
+        margin-top: -31px;
+        border-style: solid;
+        border-color: rgb(0, 93, 133);
+        border-width: 0 0 1px 0;
+        border-radius: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        color: rgb(0, 93, 133);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maincontent">
+      <h1>Wuthering Heights</h1>
+      <h2>Emily Brontë</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/313/original/wuthering_heights.jpeg?1673980976"
+        alt="Wuthering Heights Book"
+      />
+      <div>
+        <p>
+          <span class="title">Wuthering Heights</span> is a wild, passionate
+          story of the intense and almost demonic love between
+          <strong>Catherine Earnshaw</strong> and <strong>Heathcliff</strong>, a
+          foundling adopted by Catherine's father. After Mr Earnshaw's death,
+          Heathcliff is bullied and humiliated by Catherine's brother Hindley
+          and wrongly believing that his love for Catherine is not reciprocated,
+          leaves <span class="title">Wuthering Heights</span>, only to return
+          years later as a wealthy and polished man. He proceeds to exact a
+          terrible revenge for his former miseries.<br /><br />The action of the
+          story is chaotic and unremittingly violent, but the accomplished
+          handling of a complex structure, the evocative descriptions of the
+          lonely moorland setting and the poetic grandeur of vision combine to
+          make this unique novel a masterpiece of English literature.
+        </p>
+        <hr />
+        <p>
+          It has also inspired
+          <a href="https://www.youtube.com/watch?v=-1pMMIe4hb4"
+            >one of the greatest songs ever 🎵</a
+          >
+        </p>
+      </div>
+      <button type="button" onclick="reuniteCathyHeathcliff()">
+        Reunite Cathy & Heathcliff?
+      </button>
+    </div>
+    <p><em>This page was built by Natalie Martin</em></p>
+    <script>
+      function reuniteCathyHeathcliff() {
+        let userID = prompt("Is that you Cathy? (y/n)");
+        if (userID === "y") {
+          alert("Welcome home Cathy! 😍");
+        } else {
+          alert("Leave me alone to brood 😡");
+        }
+      }
+    </script>
+  </body>
+</html>
